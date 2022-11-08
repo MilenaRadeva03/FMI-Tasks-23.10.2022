@@ -1,0 +1,16 @@
+#include <iostream>
+
+int main()
+{
+    int n;
+    std::cin >> n;
+    int number = 0;
+    while(n>0)
+    {
+        int res = n % 2; 
+        number = number * 10 + res;
+        n = n / 2;
+    }
+    std::cout << number;
+
+}
