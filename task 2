@@ -1,0 +1,15 @@
+#include <iostream>
+
+int main()
+{
+    int n;
+    std::cin >> n;
+    int reversedNum = 0;
+    while (n > 0)
+    {
+        int digit = n % 10;
+        n = n / 10;
+        reversedNum = reversedNum*10 + digit;
+    }
+    std::cout << reversedNum;
+}
