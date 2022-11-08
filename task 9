@@ -1,0 +1,25 @@
+#include <iostream>
+
+int main()
+{
+    int n;
+    std::cin >> n;
+    int number = 0;
+    int count0 = 0;
+    int count1 = 0;
+    while (n > 0)
+    {
+        int res = n % 2;
+        if (res == 0)
+        {
+            count0++;
+        }
+        else 
+        {
+            count1++;
+        }
+        number = number * 10 + res;
+        n = n / 2;
+    }
+    std::cout << number<<"->"<< count0<<" zeros: "<<count1<<" ones:";
+}
