@@ -1,0 +1,18 @@
+#include <iostream>
+
+int main()
+{
+	int n;
+	std::cin >> n;
+	int count = n;
+	int sum = 0;
+	while (n > 0)
+	{
+		int a;
+		std::cin >> a;
+		sum = sum + a;
+		n--;
+	}
+	double average = sum / count;
+	std::cout << average;
+}
