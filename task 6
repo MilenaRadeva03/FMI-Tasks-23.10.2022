@@ -1,0 +1,17 @@
+int main()
+{
+    int n;
+    std::cin >> n;
+    double x = sqrt(n);
+    bool isPrime = true;
+        for (int i = 2; i <= x; i++)
+        {
+            if (n % i == 0)
+            {
+                isPrime = false;
+                break;
+            }
+        }
+        std::cout << isPrime;
+        return 0;
+}
