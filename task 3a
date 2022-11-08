@@ -1,0 +1,17 @@
+#include <iostream>
+
+int main()
+{
+    int n, k;
+    std::cin >> n>>k;
+    for (int i = 0; i <= n ;i++) //к-тата позиция броим от 0??? ако не, значи к=1
+    {
+        int digit = n % 10;
+        if (k == i)
+        {
+            std::cout << digit;
+        }
+        n = n / 10;
+    }
+    return 0;
+}
